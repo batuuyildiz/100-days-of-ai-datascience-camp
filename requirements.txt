@@ -1,0 +1,9 @@
+# Requirements for 100 Days of AI & Data Science Camp
+# These libraries will be expanded as the course progresses.
+
+jupyter
+numpy
+pandas
+matplotlib
+seaborn
+sqlalchemy
