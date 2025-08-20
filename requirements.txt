@@ -1,9 +1,54 @@
-# Requirements for 100 Days of AI & Data Science Camp
-# These libraries will be expanded as the course progresses.
+# 100 Days of AI & Data Science Camp — Expanded Requirements
+# Notes:
+# - Version floors are chosen for stability on recent Python versions.
+# - You can tighten/pin versions later if you need strict reproducibility.
+# - Remove items you don't need yet to keep the environment lean.
 
-jupyter
-numpy
-pandas
-matplotlib
-seaborn
-sqlalchemy
+########## Core & Notebooks ##########
+jupyterlab>=4.1
+notebook>=7.1
+ipykernel>=6.29
+ipywidgets>=8.1
+tqdm>=4.66
+
+########## Numeric & Data Handling ##########
+numpy>=1.26
+scipy>=1.11
+pandas>=2.2
+pyarrow>=15.0       # fast parquet/csv/arrow IO
+openpyxl>=3.1       # Excel read/write support
+
+########## Visualization ##########
+matplotlib>=3.8
+seaborn>=0.13
+folium>=0.15        # mapping
+
+########## SQL & Persistence ##########
+SQLAlchemy>=2.0
+duckdb>=0.10        # optional: in‑notebook SQL practice
+
+########## Machine Learning (scikit‑learn stack) ##########
+scikit-learn>=1.4
+statsmodels>=0.14
+imbalanced-learn>=0.12   # SMOTE & variants
+category-encoders>=2.6   # target/ordinal/one-hot helpers
+
+########## Gradient Boosting / GBMs ##########
+xgboost>=2.0
+lightgbm>=4.3
+
+########## Clustering ##########
+hdbscan>=0.8.34
+
+########## Model Saving / Utilities ##########
+joblib>=1.3
+pydantic>=2.5
+
+########## API / Serving (FastAPI module) ##########
+fastapi>=0.110
+uvicorn[standard]>=0.27
+requests>=2.31
+
+########## Dev Quality (optional) ##########
+black>=24.3.0
+ruff>=0.4.0
